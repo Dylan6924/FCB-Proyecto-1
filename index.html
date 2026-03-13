@@ -1,151 +1,80 @@
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-body {
-  background: #0a1f44;
-  color: white;
-}
+<body>
 
-.app {
-  width: 100%;
-}
+<div class="app">
 
-/* NAVBAR */
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">MiPortafolio</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Proyectos</a>
+      <a href="#">Sobre mí</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-  background: #a50044;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Hola, soy desarrollador</h2>
+    <p>Creo páginas web modernas</p>
+    <button>Ver proyectos</button>
+  </section>
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+  <!-- PROJECTS -->
+  <section class="projects">
+    <h2>Proyectos</h2>
 
-.navbar nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Proyecto 1</h3>
+        <p>Descripción del proyecto</p>
+        <button>Ver</button>
+      </div>
 
-/* HERO */
+      <div class="project-card">
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto</p>
+        <button>Ver</button>
+      </div>
 
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(135deg, #a50044, #004d98);
-}
+      <div class="project-card">
+        <h3>Proyecto 3</h3>
+        <p>Descripción del proyecto</p>
+        <button>Ver</button>
+      </div>
+    </div>
 
-.hero h2 {
-  font-size: 48px;
-}
+  </section>
 
-.hero p {
-  margin: 20px 0;
-  font-size: 18px;
-}
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>Sobre mí</h2>
+    <p>Soy desarrollador web apasionado por crear interfaces modernas.</p>
+  </section>
 
-.hero button {
-  padding: 12px 24px;
-  border: none;
-  background: #ffcc00;
-  color: #000;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p>email@email.com</p>
+  </section>
 
-/* PROJECTS */
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Mi Portafolio</p>
+  </footer>
 
-.projects {
-  padding: 80px 10%;
-}
+</div>
 
-.projects h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
+</body>
+</html>
+  
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
 
-.project-card {
-  background: #1c2c5b;
-  padding: 25px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card button {
-  margin-top: 15px;
-  background: #ffcc00;
-  border: none;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* ABOUT */
-
-.about {
-  padding: 80px 10%;
-  background: #004d98;
-  text-align: center;
-}
-
-/* CONTACT */
-
-.contact {
-  padding: 80px 10%;
-  text-align: center;
-}
-
-/* FOOTER */
-
-.footer {
-  background: #a50044;
-  text-align: center;
-  padding: 20px;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hero h2 {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-}
